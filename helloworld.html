@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+    <p>Before the script...</p>
+    <script>
+        let num = prompt("Put a number:");
+
+        num = Number(num);
+
+        if (num === 0) 
+            alert(num + " is Zero")
+         else if (num % 2 === 0) 
+            alert(num + " is Even")
+         else 
+            alert(num + " is Odd")
+        
+    </script>
+
+    <p>...After the first block script.</p>
+
+    <script type="text/javascript">
+        alert('Hello, world! - using script tag with type attribute (old)');
+    </script>
+
+    <script src="javascripts/testjs.js">
+        alert('this will be ignored')
+    </script>
+</body>
+</html>
